@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<style>
+    .form-container {
+      border: 15px solid green;
+      padding: 30px;
+      background-color: mediumpurple;
+      box-shadow: 10px 10px 5px green;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 767px) {
+      .form-container {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <!-- Image Section -->
+      <div class="col-md-6">
+        <img src="./Images/web-design-concept-with-drawings.jpg" alt="Web Design Image">
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-md-6">
+        <div class="form-container">
+          <h1 class="text-center mb-4">Form</h1>
+          <form action="">
+            <div class="mb-3">
+              <label for="Fname" >First Name</label>
+              <input type="text" class="form-control" name="Fname" placeholder="Enter the Name">
+            </div>
+
+            <div class="mb-3">
+              <label for="Lname" >Last Name</label>
+              <input type="text" class="form-control" id="Lname" name="Lname" placeholder="Enter the Last Name">
+            </div>
+
+            <div class="mb-3">
+              <label for="Email" >Email</label>
+              <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter the email">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" >Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Enter the password">
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>    
+</body>
+</html>
